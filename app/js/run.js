@@ -35,6 +35,7 @@
             name: 'app',
             location: locationPath + '/js'
         }]
-    }, ['app']);
-
+    }, ['app'], function() {
+        console.debug('DEBUG: Dojo loader has finished...');
+    });
 })();
