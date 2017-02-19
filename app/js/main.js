@@ -1,4 +1,7 @@
 /*global require*/
+/*
+default module for the app package and the point at which the application initialization begins
+ */
 require([
     'controllers/appcontroller',
     'services/mapservices',
@@ -11,7 +14,7 @@ require([
         mapOptions: {
             basemap: 'gray',
             center: [-118.241,34.0542],
-            zoom: 12
+            zoom: 5
         },
        layers: mapServices.loadServices()
     });
